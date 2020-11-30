@@ -33,7 +33,12 @@ let generator = {
    },
    get confilct(){
         return  this._conflict;
+   },
+   generatePlot(){  
+    this._groupNoun = this.generateWord('groupNoun');
+    },
+   generateWord(wordType){ 
    }
-    
+
    
 };
