@@ -12,7 +12,28 @@ let testValue2 = ["stop a vauge prophecy", "kill the deamon lord", "rob the capi
 let testValue3 = ["The town gaurds are on your tail.","a members old fling wants reveng", "the fey are out for blood."]; 
 
 let generator = {
-    _groupNoun : undefined,
-    _objective : undefined,
-    _confilct : undefined,
+    _groupNoun : "",
+    _objective : "",
+    _conflict : "",
+
+   set groupNoun(value){
+        this._groupNoun = value;
+   },
+   set objective(value){
+        this._objective = value;
+   },
+   set conflict(value){
+       this._objective = value
+   },
+   get groupNoun(){
+        return this._groupNoun;
+   },
+   get objective(){
+        return this._objective;
+   },
+   get confilct(){
+        return  this._conflict;
+   }
+    
+   
 };
